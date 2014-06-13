@@ -9,29 +9,92 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 </head>
 <body>
-<div class="container">
-    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-        <ul class="nav">
-            <li><a href="#"></a></li>
+<div class="container-fluid">
+    <nav class="navbar" role="navigation">
+        <ul class="nav nav-pills">
+            <li><a href="#">Link 1</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Link 2 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Sublink 1</a></li>
+                    <li><a href="#">Sublink 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Link 3</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Link 4 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Sublink 1</a></li>
+                    <li><a href="#">Sublink 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Link 5</a></li>
         </ul>
     </nav>
 
+    <div class="row jumbotron bg-info">
+        <div class="col-sm-8 text-center">
+            <hgroup>
+                <h1>Welcome!</h1>
+                <h4>This is a welcoming subtitle</h4>
+            </hgroup>
+        </div><!--end 8-->
+        <div class="col-sm-4">
+            <img src="#" width="200" class="img-responsive img-rounded" />
+        </div><!--end 4-->
+    </div><!--end row-->
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="btn-group">
+                <button class="btn btn-info">
+                    <span class="glyphicon glyphicon-user"></span> Friends
+                </button>
+                <button class="btn btn-info">
+                    <span class="glyphicon glyphicon-email"></span> Messages
+                </button>
+                <button class="btn btn-info"> 
+                    Notifications <span class="badge">17</span>
+                </button>
+            </div><!--end btn group-->
+        </div><!--end 4-->
+        <div class="col-md-8">
+            <h3>Main Content Header</h3>
+            <p>You probably haven't heard of them tote bag iPhone, selfies 90's 3 wolf moon ugh beard vinyl American Apparel Austin. Normcore Pinterest lomo, street art bicycle rights sartorial chia vinyl Brooklyn sustainable mumblecore. Four loko before they sold out swag lo-fi quinoa. Twee bicycle rights pop-up Austin jean shorts. Bitters shabby chic artisan Intelligentsia. Leggings chillwave Wes Anderson mlkshk, Helvetica try-hard kitsch Cosby sweater Tonx bespoke pug actually. Mixtape actually Marfa food truck.</p>
+        </div><!--end 8-->
+    </div><!--end row-->
+
+
+    
+
+    <div class="row">
+        <br />
+    </div><!--end row-->
 
     <div class="row">
     </div><!--end row-->
 
-
-    <div class="row">
-    </div><!--end row-->
-
-    <div class="row">
-    </div><!--end row-->
-
-    <div class="row">
-    </div><!--end row-->
-
-    <footer class="row">
-
+    <footer class="row bg-primary">
+        <div class="col-sm-4">
+            <address>
+                <strong>Amy Peterson</strong><br />
+                Street address line 1 <br />
+                City, State, Zip<br />
+                <abbr title="Phone">P:</abbr> (231) 329-4041
+            </address>
+        </div><!--end 4-->
+        <div class="col-sm-4">
+            <div class="btn-group btn-group-vertical btn-group-lg">
+                <button class="btn btn-lg btn-primary">
+                    <span class="glyphicon glyphicon-user"></span> Friends
+                </button>
+                <button class="btn btn-lg btn-primary">
+                    <span class="glyphicon glyphicon-email"></span> Messages
+                </button>
+                <button class="btn btn-lg btn-primary"> 
+                    Notifications <span class="badge">17</span>
+                </button>
+            </div><!--end btn group-->
+        </div><!--end 4-->
+        <div class="col-sm-4"></div><!--end 4-->
     </footer>
 
 </div><!--end container-->
