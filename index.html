@@ -33,31 +33,32 @@
     <div class="row jumbotron bg-info">
         <div class="col-sm-8 text-center">
             <hgroup>
-                <h1>Welcome!</h1>
-                <h4>This is a welcoming subtitle</h4>
+                <h1>Welcome! <br /><small class="text-primary">This is a welcoming subtitle</small></h1>
             </hgroup>
         </div><!--end 8-->
         <div class="col-sm-4">
-            <img src="images/squirrel.jpg" width="200" class="img-responsive img-rounded" />
+            <img id="squirrel" src="images/squirrel.jpg" width="200" class="img-responsive img-circle" data-container="body" data-toggle="popover" data-placement="bottom" data-content="This is a rad, hipster squirrel." />
+            <cite>Click to view description ^</cite>
         </div><!--end 4-->
     </div><!--end row-->
 
     <div class="row">
         <div class="col-md-4">
             <div class="btn-group">
-                <button class="btn btn-info">
+                <button id="friends" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Your Friends">
                     <span class="glyphicon glyphicon-user"></span> Friends
                 </button>
-                <button class="btn btn-info">
-                    <span class="glyphicon glyphicon-email"></span> Messages
+                <button class="btn btn-primary">
+                    <span class="glyphicon glyphicon-mail"></span> Messages
                 </button>
-                <button class="btn btn-info"> 
+                <button class="btn btn-primary"> 
                     Notifications <span class="badge">17</span>
                 </button>
             </div><!--end btn group-->
         </div><!--end 4-->
         <div class="col-md-8">
-            <h3>Main Content Header</h3>
+            <h3>Main Content Header <span class="label label-primary">New!</span></h3>
+            
             <p>You probably haven't heard of them tote bag iPhone, selfies 90's 3 wolf moon ugh beard vinyl American Apparel Austin. Normcore Pinterest lomo, street art bicycle rights sartorial chia vinyl Brooklyn sustainable mumblecore. Four loko before they sold out swag lo-fi quinoa. Twee bicycle rights pop-up Austin jean shorts. Bitters shabby chic artisan Intelligentsia. Leggings chillwave Wes Anderson mlkshk, Helvetica try-hard kitsch Cosby sweater Tonx bespoke pug actually. Mixtape actually Marfa food truck.</p>
         </div><!--end 8-->
     </div><!--end row-->
@@ -133,6 +134,9 @@
 <!--=======bootstrap=====-->
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script>
+        $('#friends').tooltip();
+
+        $('#squirrel').popover();
     </script>
 </body>
 </html>
